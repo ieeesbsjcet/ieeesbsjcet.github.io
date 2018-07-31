@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Stylesheet/w3.css">
+<link rel="stylesheet" href="Stylesheet/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="anime.js"></script>
+
+<style>
+.about-section{
+ background: tomato;
+  padding-top: 30px;
+
+}
+.speaker-section{
+  padding: 30px 16px;
+}
+.workshop-section{
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.gallery-section{
+padding: 30px 0px;
+}
+.register-section{
+padding: 30px 0px;
+}
+.register-box{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+@media only screen and (max-width: 700px){
+  .about-section{
+    padding: 20px 0px;
+  }
+.speaker-section{  padding:10px 10px;
+}
+
+.workshop-section{
+  padding-top:20px;
+  padding-bottom: 0px;
+}
+.gallery-section{
+padding-top:;
+}
+.register-section{
+padding: 20px 0px;
+}
+.register-box{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+}
+.c{padding-top: 20px;background-color: #0C0C0C;}
+.bgc{background-color: #0C0C0C;}
+.logo-box{height:250px;
+
+
+background-color:#0C0C0C;
+}
+.contact-box{
+  height:250px;
+  padding-top: 20px;
+  background-color:#0C0C0C;
+
+}
+.social-media-box{
+  height:250px;
+
+  padding-top: 30px;
+  background-color:#0C0C0C;
+
+}
+
+.theme{height:170px;
+width: 180px;
+
+}
+@media only screen and (max-width: 700px){
+
+  .theme{height:150px;
+  width: 150px;
+
+
+}
+
+.logo-box{height: auto;
+  border-bottom: none;
+  border-top: none;
+  padding-bottom: 20px;
+}
+
+.contact-box{
+height: auto;
+  border-top:none;
+
+  padding-top: 0px;
+}
+.social-media-box{
+height:  auto;
+  border-top:none;
+
+  padding-top: 0px;
+
+
+}
+}
+.map-box{
+  width: 100%;
+  height: 250px;
+}
+@media only screen and (max-width: 600px){
+  .map-box{
+    width: 100%;
+    height: 250px;
+  }
+
+}
+.map-opacity{
+  opacity: 0.6;
+}
+.map-opacity:hover{
+    opacity: 1;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered:hover{opacity: 0;}
+.footer-box{
+  padding: 10px;
+  background-color: #050505;
+  color: white;
+  font-size: 10px;
+
+  border-top:1px solid #141414;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+
+}
+
+
+.mySlides {display:none;}
+.zoom {
+
+    transition: transform .4s;
+
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+}
+a{text-decoration: none;}
+.active {
+		   	color:white;
+        background-color: tomato;
+
+ }
+
+
+.workshop{height: 100%;width:100%;}
+.lo{height: 50px;width:50px;padding-left: 3px;}
+.w{height: 180px;width:180px;}
+@media only screen and (max-width: 600px){
+  .w{height: 120px;width:120px;}
+}
+.logo1{height: 100px;width:100px;background-image:url("Images/ieee.png");background-size:100% 70%;background-repeat: no-repeat;background-position: center;}
+.logo2{height: 100px;width:100px;background-image:url("Images/ieee-pes.png");background-size:100% 80%;background-repeat: no-repeat;background-position: center;}
+.logo3{height: 100px;width:100px;background-image:url("Images/ieee-cs.png");background-size:100% 80%;background-repeat: no-repeat;background-position: center;}
+.logo4{height: 100px;width:100px;background-image:url("Images/ieee-ias.png");background-size:100% 70%;background-repeat: no-repeat;background-position: center;}
+@media only screen and (max-width: 600px){
+  .logo1{height: 90px;width:90px;background-image:url("Images/ieee.png");background-size:100% 70%;background-repeat: no-repeat;background-position: center;}
+  .logo2{margin-top: 20px;height: 90px;width:90px;background-image:url("Images/ieee-pes.png");background-size:100% 80%;background-repeat: no-repeat;background-position: center;}
+  .logo3{margin-top: 20px;height: 90px;width:90px;background-image:url("Images/ieee-cs.png");background-size:100% 80%;background-repeat: no-repeat;background-position: center;}
+  .logo4{margin-top: 10px;height: 90px;width:90px;background-image:url("Images/ieee-ias.png");background-size:100% 80%;background-repeat: no-repeat;background-position: center;}
+}
+
+.container{
+  padding-left:150px;
+padding-right: 150px;
+padding-top: 25px;
+padding-bottom:25px;
+}
+@media only screen and (max-width: 600px){
+.container{
+  padding-left:0px;
+padding-right: 0px;
+padding-top: 25px;
+padding-bottom:25px;
+}
+}
+/*animate*/
+.come-in {
+  transform: translateY(100px);
+  animation: come-in 4s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 3s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Images/cover.jfif");
+    min-height: 100%;
+}
+ .w3-button {
+    padding: 10px;
+}
+.w3-bar{
+  padding: 0px;
+}
+.bar{color: white;padding-top: 15px;}
+.info{padding:70px;background: tomato;}
+.info2{
+   padding-top:20px;padding-bottom:40px;
+}
+.info3{
+
+  height: auto;padding: 20px;}
+.info4{height: auto;padding: 20px;
+  /*background-image: url("Images/sjcet-b.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+*/
+}
+.pad{padding-top:0px;}
+@media only screen and (max-width: 600px){
+  .w3-bar{
+    padding-top: 0px;}
+    .bar{padding: 0px;}
+.info{padding:30px;;background: tomato;}
+.info2{
+   padding-top:20px;padding-bottom:20px;
+}
+.info3{height: auto;padding: 20px;text-align: left;}
+.info4{height: auto;padding: 20px;margin-top: 20px;text-align: left;}
+
+  }
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top bar" id="p2">
+<div class="w3-bar " id="myNavbar">
+    <a class="w3-bar-item  w3-border  w3-text-white w3-hover-opacity icon w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="w3-bar-item w3-hide-small  ">
+      <img  src="Images/cube2.png" style="height:50px;width:70px;">
+    <b>TESSERACT<sup><i>4.0</i></sup><b></div>
+      <div class="w3-bar-item w3-hide-large w3-hide-medium w3-padding-small w3-medium ">
+        <img  src="Images/cube2.png" style="height:40px;width:45px;">
+      <b>TESSERACT<sup><i>4.0</i></sup><b></div>
+    <div class="w3-right  navigation  w3-hide-medium"  >
+    <a href="#home"  class="w3-bar-item w3-button active w3-round-xxlarge w3-hover-white w3-hover-text-red w3-hide-small"><i class="fa fa-home"></i>HOME&ensp;</a>
+    <a href="#about"   class="w3-bar-item w3-button w3-round-xxlarge w3-hover-white w3-hover-text-red  w3-hide-small "><i class="fa fa-info"></i> ABOUT</a>
+    <a href="#speakers" class="w3-bar-item  w3-button  w3-round-xxlarge w3-hover-white w3-hover-text-red  w3-hide-small"><i class="fa fa-user"></i> SPEAKERS</a>
+    <a href="#workshops" class="w3-bar-item r w3-button w3-round-xxlarge w3-hover-white w3-hover-text-red  w3-hide-small"><i class="fa fa-wrench"></i> WORKSHOPS</a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-round-xxlarge w3-hover-white w3-hover-text-red  w3-hide-small"><i class="fa fa-picture-o"></i> GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-round-xxlarge w3-hover-white w3-hover-text-red  w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+</div>
+
+
+<!-- Navbar on small screens -->
+ <div id="navDemo" class="w3-bar-block navmob w3-hide w3-white w3-animate-opacity w3-hide-large" >
+   <a href="#home" class="w3-bar-item  w3-center active  w3-hover-text-red w3-hover-white  w3-padding-16 w3-button" onclick="toggleFunction()">HOME</a>
+   <a href="#about" class="w3-bar-item w3-center w3-hover-text-red w3-hover-white w3-padding-16 w3-button" onclick="toggleFunction()">ABOUT</a>
+   <a href="#speakers" class="w3-bar-item w3-center w3-hover-text-red w3-hover-white w3-padding-16 w3-button" onclick="toggleFunction()">SPEAKERS</a>
+   <a href="#workshops" class="w3-bar-item w3-center   w3-hover-text-red w3-hover-white w3-padding-16 w3-button" onclick="toggleFunction()">WORKSHOPS</a>
+   <a href="#mob-gallery" class="w3-bar-item w3-center  w3-hover-text-red w3-hover-white w3-padding-16 w3-button" onclick="toggleFunction()">GALLERY</a>
+   <a href="#contact" class="w3-bar-item  w3-center  w3-hover-text-red w3-hover-white w3-padding-16 w3-button" onclick="toggleFunction()">CONTACT</a>
+ </div>
+</div>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 page-section mobile w3-display-container " id="home">
+  <div class="w3-display-middle w3-text-white" style="padding:48px">
+    <center>
+    <span class="w3-xxlarge w3-hide-medium w3-hide-small">IEEE SB SJCET</span><br>
+    <span class="w3-large w3-hide-large">IEEE SB SJCET</span>
+    <span class="w3-jumbo w3-hide-small w3-hide-medium ">TESSERACT 4.0</span><br>
+    <span class="w3-xxlarge w3-hide-large ">TESSERACT 4.0</span></br>
+    <span class="w3-xlarge w3-hide-small w3-hide-medium"><i class="fa fa-calendar"></i>&ensp;OCT 10 | 11 | 12</span>
+    <span class="w3-large w3-hide-large"><i class="fa fa-calendar"></i>&ensp;OCT 10 | 11 | 12</span>
+    <p>
+      <a href="#register" class="w3-button w3-white w3-padding-small w3-large w3-hide-medium w3-hide-small w3-hover-white w3-card-2 w3-round-xxlarge w3-margin-top "><i class="fa fa-credit-card" ></i>&ensp;REGISTER</a>
+            <a href="#register" class="w3-button w3-white w3-padding-small w3-medium w3-hide-large w3-card-2 w3-hover-white w3-round-xxlarge w3-margin-top "> <i class="fa fa-credit-card" ></i>&ensp;REGISTER</a>&ensp;
+      <a href="index.html" class="w3-button w3-white w3-padding-small w3-large w3-hide-medium w3-card-2 w3-hide-small w3-hover-white w3-round-xxlarge w3-margin-top" download="brochure_tesseract-4.0"><i class="fa fa-file-pdf-o" style="color:red;"></i>&ensp;BROCHURE</a>
+      <a href="index.html" class="w3-button w3-white w3-padding-small w3-medium w3-hide-large w3-card-2 w3-hover-white w3-round-xxlarge w3-margin-top " download="brochure_tesseract-4.0"><i class="fa fa-file-pdf-o" style="color:red;"></i>&ensp;BROCHURE</a>
+    </p>
+
+
+  </center>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="page-section mobile  about-section"  >
+  <p class="w3-center w3-xlarge w3-text-white">ABOUT</p>
+  <div class=" w3-row w3-container " id="about" >
+    <div class="w3-quarter info"><center>  <div class=" w3-text-white w3-large " id="de"></div></center></div>
+    <div class="w3-quarter  info"><center><div class=" w3-text-white fa fa-map-marker w3-large">&ensp;SJCET Palai</div></center></div>
+      <div class="w3-quarter info"><center><div class=" w3-text-white fa fa-calendar w3-large">&ensp;OCT 10 | 11 | 12 </div></center></div>
+        <div class="w3-quarter w3-center info"><center class="w3-text-white w3-large">IEEE Event</center></div>
+  </div></div>
+  <div class="w3-row-padding w3-center w3-container  info2" >
+    <div class="w3-half">
+        <div class=" info3  w3-border" >
+      <p> <u class="w3-large">TESSERACT 4.0</u><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+</div></div>
+    <div class="w3-half">
+      <div class=" info4  w3-border" >
+      <p><u class="w3-large">IEEE SB SJCET</u><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+</p>
+</div></div>
+</div>
+
+<!-- Speakers Section -->
+<div class="mobile page-section" id="speakers" >
+  <br>
+<div class="w3-container module speaker-section  "  >
+  <h3 class="w3-center"><b>SPEAKERS<img src="Images/s.png" class="lo"></b></h3>
+  <div class="w3-row-padding  fadein" style="margin-top:0px">
+    <div class="w3-col m4 l4 w3-margin-bottom">
+      <div class="w3-card zoom" style="width:100%; height:auto">
+        <img class="w3-grayscale-min" src="Images/c3.jpg" alt="John" style="width:100%;">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO / Founder</p>
+          <a href="#" class=" w3-small w3-border fb fa fa-facebook w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border li fa fa-linkedin w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border tw fa fa-twitter w3-hover-opacity"></a>
+          <p class="w3-small">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col  m4 l4 w3-margin-bottom">
+      <div class="w3-card zoom" style="width:100%; height:auto">
+        <img src="Images/c2.jpg" alt="Jane" style="width:100%;">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director / Developer</p>
+          <a href="#" class=" w3-small w3-border fb fa fa-facebook w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border li fa fa-linkedin w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border tw fa fa-twitter w3-hover-opacity"></a>
+          <p class="w3-small">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col  m4 l4 w3-margin-bottom">
+      <div class="w3-card zoom" style="width:100%; height:auto">
+        <img src="Images/c1.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer  </p>
+          <a href="#" class=" w3-small w3-border fb fa fa-facebook w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border li fa fa-linkedin w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border tw fa fa-twitter w3-hover-opacity"></a>
+          <p class="w3-small"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="w3-row-padding  fadein" style="margin-top:0px">
+    <div class="w3-col  m4 l4 w3-margin-bottom">
+      <div class="w3-card zoom" style="width:100%; height:auto">
+        <img src="Images/c7.jpg"  alt="Zane" style="width:100%">
+        <div class="w3-container">
+          <h3>Zane Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <a href="#" class=" w3-small w3-border fb fa fa-facebook w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border li fa fa-linkedin w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border tw fa fa-twitter w3-hover-opacity"></a>
+          <p class="w3-small">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 l4 w3-margin-bottom">
+      <div class="w3-card zoom" style="width:100%; height:auto;">
+        <img src="Images/c5.jpg" alt="Ramaswamy" style="width:100%">
+        <div class="w3-container">
+          <h3>Ramaswamy </h3>
+          <p class="w3-opacity">Android Developer</p>
+          <a href="#" class=" w3-small w3-border fb fa fa-facebook w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border li fa fa-linkedin w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border tw fa fa-twitter w3-hover-opacity"></a>
+          <p class="w3-small">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col  m4 l4 w3-margin-bottom">
+      <div class="w3-card zoom" style="width:100%; height:auto;">
+        <img src="Images/c4.jpg" alt="Sarah" style="width:100%">
+        <div class="w3-container">
+          <h3>Sarah John</h3>
+          <p class="w3-opacity">CEO / Developer</p>
+          <a href="#" class=" w3-small w3-border fb fa fa-facebook w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border li fa fa-linkedin w3-hover-opacity"></a>
+          <a href="#" class=" w3-small w3-border tw fa fa-twitter w3-hover-opacity"></a>
+          <p class="w3-small">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Workshops -->
+<div class=" mobile page-section workshop-section"  id="workshops" >
+  <center><h3><b>WORKSHOPS</b><h3>
+    <img src="Images/ws.png " class="w"><br></center>
+<div class="w3-row ">
+  <div class="w3-third ">
+      <img class="workshop " src="Images/iot.jpg" alt="IOT">
+  </div>
+  <div class="w3-third ">
+    <img class="workshop" src="Images/a.jpg" alt="AI">
+  </div>
+  <div class="w3-third ">
+    <img class="workshop" src="Images/wp.png" alt="word press">
+  </div>
+</div>
+</div>
+
+
+
+<!-- Registration Section -->
+<div class="w3-container w3-center w3-dark-grey register-section" id="register">
+
+    <div class="w3-container  register-box" >
+      <ul class="w3-ul w3-black w3-card-2 ">
+        <li class="w3-red w3-xlarge w3-padding-32">REGISTER</li>
+        <li class="w3-padding-16">IEEE Members</li>
+        <li class="w3-padding-16"><i class="fa fa-inr"></i>&ensp;1000/- </li>
+        <li class="w3-padding-16">Non IEEE Members</li>
+        <li class="w3-padding-16"><i class="fa fa-inr"></i>&ensp;1000/- </li>
+        <li class="w3-padding-24">
+          <button class="w3-button w3-round-xxlarge  w3-white w3-padding-large">Proceed</button>
+        </li>
+      </ul>
+    </div>
+
+</div>
+
+
+<!-- Gallery  for desktop and tablets-->
+<div class="w3-display-container w3-hide-small  gallery-section " id="gallery">
+  <h3 class="w3-center"><b>GALLERY</b></h3><br>
+  <div class="w3-row-padding w3-section"  style="margin-top:64px">
+    <div class="w3-col l3 m3">
+      <img src="Images/bg.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-1">
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/ss.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-2">
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/w4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-3">
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/wk5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-4">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m3">
+      <img src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-5">
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/wk3.jfif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-6">
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/wk2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-7">
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/w6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-8">
+    </div>
+  </div>
+</div>
+  <!--Gallery for mobiles-->
+  <div class="w3-display-container mobile  w3-hide-large w3-hide-medium" id="mob-gallery">
+      <h4 class="w3-center"><b>GALLERY</b></h4><br>
+      <div class="w3-display-container w3-black" >
+      <img class="mySlides slideshow-fadein" src="Images/bg.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-1">
+      <img class="mySlides slideshow-fadein" src="Images/ss.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-2">
+      <img class="mySlides slideshow-fadein" src="Images/w4.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-3">
+      <img class="mySlides slideshow-fadein" src="Images/wk5.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-4">
+      <img class="mySlides slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-5">
+      <img class="mySlides slideshow-fadein" src="Images/wk3.jfif" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-6">
+      <img class="mySlides slideshow-fadein"  src="Images/wk2.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-7">
+      <img class="mySlides slideshow-fadein" src="Images/w6.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-8">
+
+      <button class="w3-button w3-display-left w3-text-white w3-hover-white" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right  w3-text-white w3-hover-white " onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--Powered By-->
+<div class="w3-container w3-padding-32 mobile w3-black w3-text-white page-section" id="schedule">
+  <center class="w3-xlarge w3-hide-medium w3-hide-small">POWERED BY</center>
+    <center class="w3-large w3-hide-large">POWERED BY</center><br>
+  <div class="w3-container w3-padding-48">
+               <div class=" w3-col  m3 l3"><center>
+                 <div class="logo1"></div></center>
+               </div>
+               <div class="w3-col m3 l3"><center>
+                 <div class="logo2"></div></center>
+               </div>
+               <div class="w3-col m3 l3"><center>
+                 <div class="logo3"></div><center>
+               </div>
+               <div class="w3-col m3 l3"><center>
+                 <div class="logo4"></div><center>
+                 </div>
+
+   </div>
+
+</div>
+
+
+
+<!--Map Section -->
+
+  <div class="w3-display-container ">
+      <div class="map-opacity map-box" id="map"></div>
+       <div class="centered w3-round-xxlarge w3-hide-small w3-black w3-text-white w3-card w3-padding-large w3-large">Get Directions&ensp;<i class="fa fa-map-marker"></i></div>
+        <div class="centered w3-round-xxlarge w3-black w3-text-white w3-hide-large w3-hide-medium w3-small w3-card" style="padding:10px;">Get Directions&ensp;<i class="fa fa-map-marker"></i></div>
+  </div>
+
+
+<!--Contact Section-->
+<div class=" mobile page-section bgc "  id="contact" >
+  <div class="w3-text-white w3-display-container c">
+      <br><center class="w3-display-middle">CONTACT US</center>
+  </div>
+<div class="w3-row w3-display-container" style="width:100%;">
+  <!--Logo-->
+  <div class="w3-col m4 l4 w3-center w3-container w3-text-white logo-box">
+    <img src="Images/cube2.png" class="theme">
+
+  </div>
+  <!--Contact Info-->
+  <div class="w3-col m4 l4 w3-container w3-text-white social-media-box">
+    <i class="fa fa-map-marker"></i>&ensp;Address<br>
+    <p class="w3-small">
+      St.Joseph’s College of Engineering and Technology,Palai,<br>
+      Choondacherry P.O,<br>
+      Palai, Kottayam 686 579,<br>
+      Kerala,India.
+    </p><a href="mailto:ieeesbsjcet@ieee.com" target="_top">
+    <i class="fa fa-envelope" ></i>&ensp;:&ensp;ieeesbsjcet@ieee.com</a>
+
+  </div>
+    <div class="w3-col m4 l4  w3-container w3-text-white contact-box">
+    <p class="w3-small">
+      <i class="fa fa-phone"></i>&ensp;Arun P ( Branch Councellor ) :<br><a href="tel:+91 7895673452">+91 7895673452<br>
+      <i class="fa fa-phone"></i>&ensp;Akshay Ajith ( Chairman ) :<br><a href="tel:+91 9895873452">+91 9895873452<br>
+      <i class="fa fa-phone"></i>&ensp;Tesn Treesa ( Secretary ) :<br><a href="tel:+91 9895873452">+91 8995672452<br>
+
+    </p>
+  Follow us on:<br>
+    <a href="#"> <i class="w3-large fa fa-facebook"></i></a>&emsp;
+    <a href="#"> <i class="w3-large fa fa-instagram"></i></a>
+  </div>
+
+</div>
+
+
+<!--Footer Section-->
+<div class="footer-box">
+  Copyright&ensp;2018<br>Designed by <a href="http://shinushaju.me" target="_blank">Shinu Shaju</a>
+</div>
+
+</div>
+
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show" ;
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+// Add active class to the current button (highlight it)
+$(document).ready(function() {
+		$('a[href*=#]').bind('click', function(e) {
+				e.preventDefault(); // prevent hard jump, the default behavior
+
+				var target = $(this).attr("href"); // Set the target as variable
+
+				// perform animated scrolling by getting top-position of target-element and set it as scroll target
+				$('html, body').stop().animate({
+						scrollTop: $(target).offset().top
+				}, 0, function() {
+						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+				});
+
+				return false;
+		});
+});
+
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+
+	// Show/hide menu on scroll
+		//if (scrollDistance >= 850) {
+		//		$('nav').fadeIn("fast");
+		//} else {
+		//
+    		$('nav').fadeOut("fast");
+		//}
+
+		// Assign active class to nav links while scolling
+		$('.page-section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.navigation a.active').removeClass('active');
+						$('.navigation a').eq(i).addClass('active');
+				}
+		});
+}).scroll();
+//For mobiles and tablets
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+
+		// Show/hide menu on scroll
+		//if (scrollDistance >= 850) {
+		//		$('nav').fadeIn("fast");
+		//} else {
+		//		$('nav').fadeOut("fast");
+		//}
+
+		// Assign active class to nav links while scolling
+		$('.mobile').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.navmob a.active').removeClass('active');
+						$('.navmob a').eq(i).addClass('active');
+				}
+		});
+}).scroll();
+
+//Animate on scroll
+(function($) {
+
+  $.fn.visible = function(partial) {
+
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".module");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+
+win.scroll(function(event) {
+
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+  });
+
+});
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll < 1) {
+	    $(".bar").css("background" , "transparent").css("box-shadow" , "none").css("color", "white");
+       $(".fa-bars").css("color" , "white");
+
+	  }
+
+
+	  else{
+		  $(".bar").css("background" , "white" ).css("box-shadow" , "0 2px 5px 0 rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.12)").css("color", "black");
+       $(".fa-bars").css("color" , "black");
+
+	  }
+  })
+})
+
+
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 24, 2018 12:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("de").innerHTML = days + " Days Left!!! " ;//+ hours + " Hrs  "
+    //+ minutes + " Mins  " + seconds + " Secs  ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("de").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+<!--Google-Map-->
+<script>
+
+function myMap() {
+  var myCenter = new google.maps.LatLng(9.7268, 76.7261);
+  var mapCanvas = document.getElementById("map")
+  var mapOptions = {center: myCenter, zoom: 10};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(15);
+    map.setCenter(marker.getPosition());
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+</html>

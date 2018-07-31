@@ -1,0 +1,210 @@
+.icon{background: transparent;
+border-radius: 20%;
+margin: 5px;
+font-size: 13px;
+
+}
+
+.cla{
+  background-color: red;
+  box-sizing: border-box;
+  border-color: black;
+
+  padding: 10px;
+}
+
+.fb{
+background-color:white;
+color:#3B5998 ;
+padding: 10px 13px;;
+border-radius: 50%;
+}
+.li{background-color:white ;
+color:#0077B5;
+padding: 10px 11px;
+border-radius: 50%;}
+.tw{background-color: white;
+color:#1DA1F2;
+padding: 10px 10px;;
+border-radius: 50%;}
+
+
+.fadein{animation:fading 7s}@keyframes fading{0%{opacity:0.2}50%{opacity:1}100%{opacity:1}}
+
+
+.slideshow-fadein{animation:fading 5s}@keyframes fading{0%{opacity:0.3}50%{opacity:1}100%{opacity:1}}
+
+.count-down-font{
+  font-size: 25px;
+}
+@media only screen and (max-width: 600px){
+  .count-down-font{
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width: 600px){
+    .contact-motto{margin-left: 5px;float: left;}
+    .theme{height:150px;
+    width: 150px;
+  float: left;
+    margin-left: 0px;
+    margin-top: 30px;
+    }
+
+  }
+  .contact-motto{margin-left: 90px;}
+  .theme{height:200px;
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("Images/cube2.png")
+  }
+  .map-box{
+    width: 100%;
+    height: 400px;
+  }
+  @media only screen and (max-width: 600px){
+    .map-box{
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  .map-opacity{
+    opacity: 0.6;
+  }
+  .map-opacity:hover{
+      opacity: 1;
+  }
+  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .centered:hover{opacity: 0;}
+  .footer-box{
+    padding: 20px;
+    background-color: #050505;
+    color: white;
+    font-size: 10px;
+
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+
+  }
+  .logo-box{height:300px;
+  background-color:#0C0C0C;
+  border-bottom:1px solid #141414;
+  border-top:1px solid #191919;}
+
+  .contact-box{
+    height:300px;
+    background-color:#0C0C0C;
+    border-bottom:1px solid #141414;
+    border-top:1px solid #191919;
+
+  }
+
+  .mySlides {display:none;}
+  .zoom {
+
+      transition: transform .4s;
+
+  }
+
+  .zoom:hover {
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.05); /* Safari 3-8 */
+      transform: scale(1.05);
+  }
+  a{text-decoration: none;}
+  .active {
+  		   	color:white;
+          background-color: tomato;
+
+   }
+
+
+  .workshop{height: 100%;width:100%;}
+  .lo{height: 50px;width:50px;padding-left: 3px;}
+  .w{height: 180px;width:180px;}
+  @media only screen and (max-width: 600px){
+    .w{height: 120px;width:120px;}
+  }
+  .logo1{height: 100px;width:100px;background-image:url("Images/IEEE_logo.png");background-size:80px 90px;background-repeat: no-repeat;background-position: center;}
+  .logo2{height: 100px;width:100px;background-image:url("Images/pes.png");background-size:80px 90px;background-repeat: no-repeat;background-position: center;}
+  .logo3{height: 100px;width:100px;background-image:url("Images/csieee.png");background-size:80px 90px;background-repeat: no-repeat;background-position: center;}
+  .logo4{height: 100px;width:100px;background-image:url("Images/ias.jfif");background-size:80px 90px;background-repeat: no-repeat;background-position: center;}
+  .logo5{height: 100px;width:100px;background-image:url("Images/wie.png");background-size:80px 90px;background-repeat: no-repeat;background-position: center;}
+  .logo6{height: 100px;width:100px;background-image:url("Images/sjcet.png");background-size:80px 90px;background-repeat: no-repeat;background-position: center;}
+  @media only screen and (max-width: 600px){
+    .logo1{height: 70px;width:70px;background-image:url("Images/IEEE_logo.png");background-size:60px 60px;background-repeat: no-repeat;background-position: center;}
+    .logo2{height: 70px;width:70px;background-image:url("Images/pes.png");background-size:60px 60px;background-repeat: no-repeat;background-position: center;}
+    .logo3{height: 70px;width:70px;background-image:url("Images/csieee.png");background-size:60px 60px;background-repeat: no-repeat;background-position: center;}
+    .logo4{height: 70px;width:70px;background-image:url("Images/ias.jfif");background-size:60px 60px;background-repeat: no-repeat;background-position: center;}
+    .logo5{height: 70px;width:70px;background-image:url("Images/wie.png");background-size:60px 60px;background-repeat: no-repeat;background-position: center;}
+    .logo6{height: 70px;width:70px;background-image:url("Images/sjcet.png");background-size:60px 60px;background-repeat: no-repeat;background-position: center;}
+  }
+  .container{
+    padding-left:150px;
+  padding-right: 150px;
+  padding-top: 25px;
+  padding-bottom:25px;
+  }
+  @media only screen and (max-width: 600px){
+  .container{
+    padding-left:0px;
+  padding-right: 0px;
+  padding-top: 25px;
+  padding-bottom:25px;
+  }
+  }
+  /*animate*/
+  .come-in {
+    transform: translateY(100px);
+    animation: come-in 4s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 3s;
+  }
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
+
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body, html {
+      height: 100%;
+      line-height: 1.8;
+  }
+  /* Full height image header */
+  .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("Images/cover.jfif");
+      min-height: 100%;
+  }
+   .w3-button {
+      padding: 10px;
+  }
+  .w3-bar{
+    padding: 0px;
+  }
+  @media only screen and (max-width: 600px){
+    .w3-bar{
+      padding-top: 0px;
+    }}
+  .bar{color: white;padding: 10px;}
+  @media only screen and (max-width: 600px){
+  .bar{color: white;padding: 10px;}}
+
+  .workshop-padding{padding-top:128px!important;padding-bottom:128px!important}
