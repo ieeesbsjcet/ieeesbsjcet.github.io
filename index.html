@@ -13,29 +13,7 @@
 <script src="anime.js"></script>
 
 <style>
-	.slider{overflow:hidden;}
 	
-	.ms-touch .slider{
-  overflow-x: scroll;
-  overflow-y: hidden;
-
-  -ms-overflow-style: none;
-  /* Hides the scrollbar. */
-
-  -ms-scroll-chaining: none;
-  /* Prevents Metro from swiping to the next tab or app. */
-
-  -ms-scroll-snap-type: mandatory;
-  /* Forces a snap scroll behavior on your images. */
-
-  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-  /* Defines the y and x intervals to snap to when scrolling. */
-}
-
-.animate {
-  transition: transform 0.3s ease-out;
-}
-
 .about-section{
  background: tomato;
   padding-top: 30px;
@@ -539,17 +517,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </div>
 </div>
   <!--Gallery for mobiles-->
-  <div class="w3-display-container slider mobile  w3-hide-large w3-hide-medium" id="mob-gallery">
+  <div class="w3-display-container mobile  w3-hide-large w3-hide-medium" id="mob-gallery">
       <h4 class="w3-center"><b>GALLERY</b></h4><br>
       <div class="w3-display-container w3-black" >
-      <img class="mySlides slide-image  slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-1">
-      <img class="mySlides slide-image slideshow-fadein" src="Images/ss.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-2">
-      <img class="mySlides slide-image  slideshow-fadein" src="Images/w4.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-3">
-      <img class="mySlides slide-image  slideshow-fadein" src="Images/wk5.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-4">
-      <img class="mySlides slide-image  slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-5">
-      <img class="mySlides slide-image  slideshow-fadein" src="Images/wk3.jfif" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-6">
-      <img class="mySlides slide-image  slideshow-fadein"  src="Images/wk2.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-7">
-      <img class="mySlides slide-image  slideshow-fadein" src="Images/w6.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-8">
+      <img class="mySlides  slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-1">
+      <img class="mySlides  slideshow-fadein" src="Images/ss.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-2">
+      <img class="mySlides   slideshow-fadein" src="Images/w4.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-3">
+      <img class="mySlides   slideshow-fadein" src="Images/wk5.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-4">
+      <img class="mySlides   slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-5">
+      <img class="mySlides   slideshow-fadein" src="Images/wk3.jfif" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-6">
+      <img class="mySlides   slideshow-fadein"  src="Images/wk2.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-7">
+      <img class="mySlides   slideshow-fadein" src="Images/w6.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-8">
 
       <button class="w3-button w3-display-left w3-text-white w3-hover-white" onclick="plusDivs(-1)">&#10094;</button>
 <button class="w3-button w3-display-right  w3-text-white w3-hover-white " onclick="plusDivs(1)">&#10095;</button>
@@ -880,101 +858,6 @@ function myMap() {
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
-	<script>
-if (navigator.msMaxTouchPoints) {
-
-  $('#mob-gallery').addClass('ms-touch');
-
-  $('#mob-gallery').on('mob-galleryscroll', function() {
-    $('.slide-image').css('transform','translate3d(-' + (100-$(this).scrollLeft()/6) + 'px,0,0)');
-  });
-
-} else {
-
-  var slider = {
-
-    el: {
-      slider: $("#mob-gallery"),
-      holder: $(".w3-display-container"),
-      imgSlide: $(".slide-image")
-    },
-
-    slideWidth: $('#mob-gallery').width(),
-    touchstartx: undefined,
-    touchmovex: undefined,
-    movex: undefined,
-    index: 0,
-    longTouch: undefined,
-
-    init: function() {
-      this.bindUIEvents();
-    },
-    bindUIEvents: function() {
-
-         this.el.holder.on("touchstart", function(event) {
-           slider.start(event);
-         });
-
-         this.el.holder.on("touchmove", function(event) {
-           slider.move(event);
-         });
-
-         this.el.holder.on("touchend", function(event) {
-           slider.end(event);
-         });
-
-       },
-
-       start: function(event) {
-         // Test for flick.
-         this.longTouch = false;
-         setTimeout(function() {
-           window.slider.longTouch = true;
-         }, 250);
-
-         // Get the original touch position.
-         this.touchstartx =  event.originalEvent.touches[0].pageX;
-
-         // The movement gets all janky if there's a transition on the elements.
-         $('.animate').removeClass('animate');
-       },
-
-       move: function(event) {
-         // Continuously return touch position.
-         this.touchmovex =  event.originalEvent.touches[0].pageX;
-         // Calculate distance to translate holder.
-         this.movex = this.index*this.slideWidth + (this.touchstartx - this.touchmovex);
-         // Defines the speed the images should move at.
-         var panx = 100-this.movex/6;
-         if (this.movex < 600) { // Makes the holder stop moving when there is no more content.
-           this.el.holder.css('transform','translate3d(-' + this.movex + 'px,0,0)');
-         }
-         if (panx < 100) { // Corrects an edge-case problem where the background image moves without the container moving.
-           this.el.imgSlide.css('transform','translate3d(-' + panx + 'px,0,0)');
-         }
-       },
-
-       end: function(event) {
-         // Calculate the distance swiped.
-         var absMove = Math.abs(this.index*this.slideWidth - this.movex);
-         // Calculate the index. All other calculations are based on the index.
-         if (absMove > this.slideWidth/2 || this.longTouch === false) {
-           if (this.movex > this.index*this.slideWidth && this.index < 2) {
-             this.index++;
-           } else if (this.movex < this.index*this.slideWidth && this.index > 0) {
-             this.index--;
-           }
-         }
-         // Move and animate the elements.
-         this.el.holder.addClass('animate').css('transform', 'translate3d(-' + this.index*this.slideWidth + 'px,0,0)');
-         this.el.imgSlide.addClass('animate').css('transform', 'translate3d(-' + 100-this.index*50 + 'px,0,0)');
-
-       }
-
-     };
-
-     slider.init();
-   }
-</script>
+	
 </body>
 </html>
