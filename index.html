@@ -240,7 +240,7 @@ body, html {
   padding-top: 0px;
 }
 .bar{color: white;padding-top: 15px;}
-.info{padding:70px;background: tomato;border:2px solid white;}
+.info{padding-top:70px;padding-bottom:70px;background: tomato;border:2px solid white;}
 .info2{
    padding-top:20px;padding-bottom:40px;
 }
@@ -263,7 +263,7 @@ padding-bottom: 10px;
 }
     .bar{padding:0px;
 	}
-.info{padding:80px;;background: tomato;margin:20px;border:4px solid white;}
+.info{padding-top:70px;padding-bottom:70px;background: tomato;margin-top:15px;border:4px solid white;}
 
 .info2{
    padding-top:20px;padding-bottom:20px;
@@ -343,15 +343,15 @@ padding-bottom: 10px;
 </div></div>
     <div class="w3-quarter">
       <div class="w3-large w3-text-white info" >
-      <i class=" fa fa-map-marker "></i>&ensp;SJCET Palai</div>
+      <i class=" fa fa-map-marker "></i><br>SJCET Palai</div>
 </div>
 <div class="w3-quarter">
   <div class=" info  w3-text-white w3-large" >
-<i class=" fa fa-calendar"></i>&ensp;3 Days</div>
+<i class=" fa fa-calendar"></i><br>3 Days</div>
 </div>
 <div class="w3-quarter">
   <div class=" info" >
-  <div class="w3-large w3-text-white">IEEE Event</div>
+  <div class="w3-large w3-text-white">An IEEE Event</div>
 </div></div>
 </div>
 </div>
@@ -377,7 +377,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="mobile page-section" id="speakers" >
   <br>
 <div class="w3-container module speaker-section  "  >
-  <h3 class="w3-center font2"><b>SPEAKERS<img src="Images/s.png" class="lo"></b></h3><br>
+  <class="w3-xlarge font3">SPEAKERS<img src="Images/s.png" class="lo"></center><br>
   <div class="w3-row-padding  fadein" style="margin-top:0px">
     <div class="w3-col m4 l4 w3-margin-bottom">
       <div class="w3-card zoom" style="width:100%; height:auto">
@@ -467,7 +467,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- Workshops -->
 <div class=" mobile page-section workshop-section"  id="workshops" >
-  <center><h3><b>WORKSHOPS</b><h3>
+  <center class="w3-xlarge font3">WORKSHOPS</center>
     <img src="Images/ws.png " class="w"><br></center>
 <div class="w3-row ">
   <div class="w3-third ">
@@ -505,7 +505,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- Gallery  for desktop and tablets-->
 <div class="w3-display-container w3-hide-small  gallery-section " id="gallery">
-  <h3 class="w3-center"><b>GALLERY</b></h3><br>
+  <class="w3-center w3-xlarge font3">GALLERY</center><br>
   <div class="w3-row-padding w3-section"  style="margin-top:64px">
     <div class="w3-col l3 m3">
       <img src="Images/wk5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gallery-pic-1">
@@ -538,7 +538,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
   <!--Gallery for mobiles-->
   <div class="w3-display-container mobile  w3-hide-large w3-hide-medium" id="mob-gallery">
-      <h4 class="w3-center"><b>GALLERY</b></h4><br>
+      <center class="w3-xlarge font3">GALLERY</center><br>
       <div class="w3-display-container w3-black" >
       <img class="mySlides  slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-1">
       <img class="mySlides  slideshow-fadein" src="Images/ss.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-2">
@@ -568,7 +568,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!--Powered By-->
 <div class="w3-container w3-padding-32 mobile pow w3-text-white page-section" id="schedule">
-  <center class="w3-xlarge w3-hide-medium w3-hide-small">POWERED BY</center>
+  <center class="w3-xlarge font3 w3-hide-medium w3-hide-small">POWERED BY</center>
     <center class="w3-large w3-hide-large">POWERED BY</center><br>
   <div class="w3-container w3-padding-48">
                <div class=" w3-col  m3 l3"><center>
@@ -600,7 +600,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <!--Contact Section-->
 <div class=" mobile page-section bgc "  id="contact" >
   <div class="w3-text-white w3-display-container c">
-      <br><center class="w3-display-middle font3">CONTACT US</center>
+      <br><center class="w3-display-middle w3-xlarge font3">CONTACT US</center>
   </div>
 <div class="w3-row w3-display-container" style="width:100%;">
   <!--Logo-->
@@ -807,7 +807,7 @@ var countdownfunction = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.getElementById("de").innerHTML = days + " Days Left!!! " ;//+ hours + " Hrs  "
+    document.getElementById("de").innerHTML = days + "<br>Days Left!!! " ;//+ hours + " Hrs  "
     //+ minutes + " Mins  " + seconds + " Secs  ";
 
     // If the count down is over, write some text
