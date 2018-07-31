@@ -13,7 +13,9 @@
 <script src="anime.js"></script>
 
 <style>
-	.ms-touch{
+	.slider{overflow:hidden;}
+	
+	.ms-touch .slider{
   overflow-x: scroll;
   overflow-y: hidden;
 
@@ -537,7 +539,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </div>
 </div>
   <!--Gallery for mobiles-->
-  <div class="w3-display-container mobile  w3-hide-large w3-hide-medium" id="mob-gallery">
+  <div class="w3-display-container slider mobile  w3-hide-large w3-hide-medium" id="mob-gallery">
       <h4 class="w3-center"><b>GALLERY</b></h4><br>
       <div class="w3-display-container w3-black" >
       <img class="mySlides slide-image  slideshow-fadein" src="Images/wk1.jpg" style="width:100%" onclick="onClick(this)"  alt="gallery-pic-1">
